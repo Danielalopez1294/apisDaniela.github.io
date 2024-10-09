@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="geolocalizacion.css">
-    <center>
     <script src="staticmap.js"></script>
     <style>
         #map{
             height: 500px;
             width: 70%;
-            border-radius: 20px;
+            border-radius: 10px;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>MAPA ESTATICO</title>
 </head>
 <body>
-    <h1>MAPA ESTATICO</h1>
+    <h1 class="f">MAPA ESTATICO</h1>
+    <!-- Barra de busqueda de lugares -->
+     <center>
+    <input id="pac-input" type="text" placeholder="Buscar lugares" class="busqueda">
+    </center>
+    <br><br>
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxZiVOo6RQGjRo7ODdXnYIZbpx-Bju9lY
-&loading=async&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3pKkj-H_bOea9hkxpuyobPiOyuWDCHeY&libraries=places&callback=initMap"></script>
     </script>
+    <center>
     <div id="map"></div>
-
-
-</center>
+    <div><a href="index.html"><button class="e">REGRESAR</button></a></div>
+    </center>
 </body>
 </html>
